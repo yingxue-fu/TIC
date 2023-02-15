@@ -1,0 +1,26 @@
+# JUMPp TMTc-based reporter correction parameter file (Version: 0.0.1, Date: 08/30/2022)
+
+# Inputs: 
+idtxt = Example_Input/ID_small_test.txt                                     # PSM-level identification result (ID.txt) 
+reptQuan = test_output/01_reporter_quan/publication/id_all_prot_quan.txt    # reporter-based quantification file
+tmtcQuan = test_output/02_TMTc_quan/publication/id_all_prot_quan_tmtc.txt   # TMTc-based quantification file
+
+# Output directory
+save_dir = test_output						# name of the directory for JUMPq results 
+
+# Names of TMT reporters used
+tmt_version = TMTpro                                # use 'TMT' if TMT11 and 'TMTpro' if TMT16 and TMT18
+tmt_channels_used = sig126; sig127N; sig127C; sig128N; sig128C; sig129N; sig129C; sig130N; sig130C; sig131N; sig131C; sig132N; sig132C; sig133N; sig133C; sig134N; sig134C; sig135N
+
+# TMTc-based reporter correction
+unify_noise_level = 1            # 1 = Yes; 0 = No; unify the noise level among reporter channels
+use_noise_cap = 1                # 1 = Yes; 0 = No; limit the maximum noise level to a specific value
+max_noise_pct = 0.9              # 0.9 means 90% of minimum reporter intensity
+
+# For testing purpose
+draw_ratio_plot = 1                                                     # 1 = Yes; 0 = No; 
+theoretical_ecoli_ratio = 10,1,3,1,10,3,10,1,3,1,10,1,10,3,3,10,1,3     # theoretical ratio for E. coli proteins. If no E. coli proteins, put 0 there. 
+#theoretical_ecoli_ratio = 0
+#theoretical_human_ratio = 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1           # theoretical ratio for Human proteins. If no Human proteins, put 0 there.
+theoretical_human_ratio = 0
+

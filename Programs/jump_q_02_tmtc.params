@@ -1,0 +1,31 @@
+# JUMPp TMTc-based quantification parameter file (Version: 0.0.1, Date: 08/30/2022)
+
+# Input: PSM-level identification result (ID.txt) 
+idtxt = Example_Input/ID_small_test.txt
+
+# Output directory
+save_dir = test_output  						# name of the directory for JUMPq results (prefix "02_TMTc_quan_" will be added)
+
+# PSM filtering (TMTc)
+tmtc_min_intensity_method = 1,4						# 0 = no use of the filter, 1 = minimum, 2 = maximum, 3 = mean, 4 = median
+tmtc_min_intensity_value = 50, 1000					# Minimum intensity threshold
+tmtc_min_intensity_method_1_2_psm = 1,4					# 0 = no use of the filter, 1 = minimum, 2 = maximum, 3 = mean, 4 = median
+tmtc_min_intensity_value_1_2_psm = 50, 1000				# Minimum intensity threshold
+
+# Names of TMT channels used
+tmt_version = TMTpro                                # use 'TMT' if TMT11 and 'TMTpro' if TMT16 and TMT18
+tmt_channels_used = sig126; sig127N; sig127C; sig128N; sig128C; sig129N; sig129C; sig130N; sig130C; sig131N; sig131C; sig132N; sig132C; sig133N; sig133C; sig134N; sig134C; sig135N
+
+# TMTc-based quantification 
+isolation_width = 1
+isolation_offset = 0.2
+
+# Advanced parameters for TMTc-based function
+SSD_cutoff = 0.005           # Sum of squared differences (SSD) between real and inferred TMTc peaks
+min_n_TMTc_peaks = 8         # Minimum # of mono TMTc peaks for a PSM
+
+# For testing purpose
+draw_ratio_plot = 1                                                     # 1 = Yes; 0 = No; 
+theoretical_ecoli_ratio = 10,1,3,1,10,3,10,1,3,1,10,1,10,3,3,10,1,3     # theoretical ratio for E. coli proteins. If no E. coli proteins, put 0 there. 
+#theoretical_ecoli_ratio = 0
+theoretical_human_ratio = 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1           # theoretical ratio for Human proteins. If no Human proteins, put 0 there.
