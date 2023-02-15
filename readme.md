@@ -15,7 +15,9 @@ Download all files by clicking "Code" and then "Download ZIP". Unzip the file to
 ## Run the program
 There are three seperate steps for running the program, i.e., 1) TMTpro reporter ion-based quantification, 2) TMTproC ion-based quantification, and 3) TMTpro reporter ion noise correction. For each step, there is a paramter file (located in the "Parameter_Files" folder) used to set up the input and output file path and other required parameters. 
 
-To test the program using the example input files, you can directly run the foloowling commands step by step.
+To test the program using the example input files, you need to download the corresponding mzXML file from here: https://drive.google.com/file/d/1ftBng_v8OpNbBdv7vydeVIL4xrBGuuf9/view?usp=sharing, and put it in the \Example_Input folder.
+
+Then run the followling commands step by step.
 
 1. TMTpro reporter ion-based quantification
 
