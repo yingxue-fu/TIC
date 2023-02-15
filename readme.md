@@ -1,14 +1,19 @@
 # TMT interference correction using TMTc ions 
 ## Download the program
-Download all files by clicking "Code" and then "Download ZIP". Unzip the file to a directory and change the working directory to it.
+Download all files by clicking "Code" and then "Download ZIP". Unzip the file to a directory.
 
-`cd path/to/the/directory`
+
 ## Set up conda environment
 1. Follow the instructions (https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) to install conda in your operating system.
-2. Use the "environment.yml" file to create the conda environment.
+
+2. Open the 'Terminal' (on Linux or MAC) or 'Anaconda Prompt' (on Windows) and change the working directory to the directory of downloaded files.
+
+    `cd path/to/the/directory`
+
+3. Use the "environment.yml" file to create the conda environment.
     
     `conda env create --file environment.yml`
-3. Activate the conda environment.
+4. Activate the conda environment.
     
     `conda activate tmtcNOISEcorrc`
 
