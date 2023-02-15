@@ -1,4 +1,4 @@
-# TMT interference correction using TMTc ions 
+# TMT interference correction (TIC) using TMTc ions 
 ## Download the program
 Download all files by clicking "Code" and then "Download ZIP". Unzip the file to a directory.
 
