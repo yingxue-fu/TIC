@@ -4,9 +4,9 @@ Download all files by clicking "Code" and then "Download ZIP". Unzip the file to
 
 
 ## Set up conda environment
-1. Follow the instructions (https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) to install conda in your operating system.
+1. Follow the instructions (https://conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation) to install conda on Windows  system.
 
-2. Open the 'Terminal' (on Linux or MAC) or 'Anaconda Prompt' (on Windows) and change the working directory to the directory of downloaded files.
+2. Open the 'Anaconda Prompt' and change the working directory to the directory of downloaded files.
 
     `cd path/to/the/directory`
 
