@@ -81,7 +81,7 @@ if __name__ == "__main__":
         print(TMTc_summary['n_mono_TMTc_peaks'].to_string(index=False, col_space=(24,15)))
         
         # plot # of mono TMTc peaks and save extracted TMTc peaks
-        n_TMTc_fractions(dfId_TMTc, "mono", interDir, saveFile=os.path.join(interDir,'n_extracted_TMTc_peaks_in_each_run.pdf'))
+        #n_TMTc_fractions(dfId_TMTc, "mono", interDir, saveFile=os.path.join(interDir,'n_extracted_TMTc_peaks_in_each_run.pdf'))
     
         # filter by number of TMTc peaks (mono)
         dfId_TMTc = dfId_TMTc[dfId_TMTc['n_mono_TMTc_peaks'] >= int(params['min_n_TMTc_peaks'])].reset_index(drop=True)
