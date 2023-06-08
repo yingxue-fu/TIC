@@ -46,7 +46,7 @@ def rm_prec_z1(df):
     # get PSM charge distribution 
     precCharge_stat = df['Precursor.Charge'].value_counts().to_frame()
     precCharge_stat.reset_index(inplace=True)
-    precCharge_stat = precCharge_stat.rename({'index': 'Precursor Charge', 'Precursor.Charge': '# of Precursors'}, axis=1)
+    precCharge_stat = precCharge_stat.rename({'Precursor.Charge': 'Precursor Charge', 'count': '# of Precursors'}, axis=1)
     print('\n  Precursor charge distribution (all runs)')
     print(precCharge_stat.to_string(index=False, col_space=(20,20)))
     
